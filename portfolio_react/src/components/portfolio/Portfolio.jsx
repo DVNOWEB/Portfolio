@@ -13,7 +13,7 @@ const projectData = [
     id: 1,
     image: IMG1,
     title: 'My Portfolio React JS',
-    github: 'https://github.com/DVNOWEB/portfolio_react.git',
+    github: 'https://github.com/DVNOWEB/Portfolio.git',
     demo: 'https://youtu.be/ixi92hXmYOo',
   },
   {
