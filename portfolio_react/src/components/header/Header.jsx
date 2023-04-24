@@ -6,11 +6,14 @@ import Socials from './Socials'
 
 const Header = () => {
   return (
-    <header id="header">
+    <header id="webdeveloper">
       <div className="container header__container">
-        <span>I am</span>
+        <span className="header_span">Innovative Web Design by</span>
         <h1>D&#581;NO Z&#581;G&#581;NJOR</h1>
         <span>FrontEnd Web Developer</span>
+        <span className="header_span">
+          Creating Engaging Digital Experiences
+        </span>
         <br />
         <p>
           As a passionate frontend web developer with a keen eye for both

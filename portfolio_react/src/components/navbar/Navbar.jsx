@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav>
       {/* Activ nav fix */}
       <a
-        href="#header"
+        href="#webdeveloper"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}>
         <AiOutlineHome />

@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer__container">
-        <a href="#header" className="scroll__up">
+        <a href="#webdeveloper" className="scroll__up">
           Scroll up
         </a>
 
         <ul className="permalinks">
           <li>
-            <a href="#header">Top</a>
+            <a href="#webdeveloper">Top</a>
           </li>
           <li>
             <a href="#about">About me</a>
