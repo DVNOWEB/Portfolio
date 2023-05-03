@@ -21,8 +21,14 @@
   user-select: none;
 }
 
+.testimonial span{
+  font-size: .8rem;
+  color: var(--color-white);
+  margin: 1rem 0 0;
+}
+
 .client__name{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-light);
   margin: 1rem 0 0;

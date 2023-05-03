@@ -18,9 +18,10 @@ import 'swiper/css/scrollbar';
 const userTestimonials = [
   {
     avatar: AVT1,
-    name: 'Lorem Ipsum',
+    title: 'CEO VAconsulting',
+    name: 'Vladan Andric',
     review:
-      'Lorem Ipsum, dolor sit amet consectetur adipisicing elit. Delectus soluta placeat necessitatibus esse corporis nostrum perferendis vitae dolorum expedita provident.',
+      "DVNOWEB AB is a responsive, knowledgeable and thoroughly professional company. They built a super nice site for my company VAconsulting. They take care of everything, which is nice because you don't really have that time for small business owners. They are also well-read and creative about new solutions to stand out a little.",
   },
   {
     avatar: AVT2,
@@ -55,7 +56,7 @@ const Testimonials = () => {
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}>
-        {userTestimonials.map(({ avatar, name, review }, index) => {
+        {userTestimonials.map(({ avatar, title, name, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
               <div className="client__avatar">
@@ -63,6 +64,7 @@ const Testimonials = () => {
               </div>
 
               <h5 className="client__name">{name}</h5>
+              <span>{title}</span>
               <small className="client__review">{review}</small>
             </SwiperSlide>
           )

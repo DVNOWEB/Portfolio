@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -69,8 +70,10 @@ h1 {
 .header_span {
   padding: 2rem 0 1rem;
   font-weight: 400;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 span {
@@ -149,6 +152,10 @@ img {
 /* Media queries S */
 
 @media screen and (max-width: 598px) {
+  html{
+    font-size: 90%;
+  }
+
   .container {
     width: var(--container-width-sm);
   }
@@ -161,7 +168,16 @@ img {
 /* Media extra S */
 
 @media screen and (max-width: 320px) {
+  html{
+    font-size: 80%;
+  }
+  
   h1 {
     font-size: 2.5rem;
+  }
+
+  .btn{
+    font-size: .9rem;
+    padding: .2rem .6rem;
   }
 }
