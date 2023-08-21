@@ -1,12 +1,12 @@
 import React from 'react'
-import CV from '../../assets/DanoZaganjorCV.pdf'
+import CV from '../../assets/DanoZaganjorCV.eng.pdf'
 
 
 const CTA = () => {
   return (
     <div className="call_to_action">
       <a href={CV} download className="btn">
-        Check my CV
+        Check my CV 
       </a>
       <a href="#contact" className="btn btn-primary">
         Let's talk
