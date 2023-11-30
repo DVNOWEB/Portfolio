@@ -19,7 +19,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <GiNetworkBars className="about__icon"/>
+              <GiNetworkBars className="about__icon" />
               <h5>Experience</h5>
               <small>2+ years of study experience</small>
               <br />
@@ -31,11 +31,11 @@ const About = () => {
               <FaUsers className="about__icon" />
               <h5>Customers</h5>
               <small>20+ Worldwide</small>
-            </article>
-            <article className="about__card">
-              <AiOutlineFundProjectionScreen className="about__icon" />
-              <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <article className="about__card">
+                <AiOutlineFundProjectionScreen className="about__icon" />
+                <h5>Projects</h5>
+                <small>20+ Completed</small>
+              </article>
             </article>
           </div>
 
