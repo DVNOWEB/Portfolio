@@ -8,7 +8,8 @@ header{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  align-items: center;
+  height: 100vh;
   position: relative;
 }
 
@@ -29,6 +30,7 @@ header{
   position: absolute;
   left: 0;
   bottom: 3rem;
+  font-size: large;
 }
 
 .header__socials::after{
@@ -55,7 +57,7 @@ header{
   bottom: 5rem;
   right: -2.3rem;
   transform: rotate(90deg);
-  font-size: 1rem;
+  font-size: large;
   font-weight: 300;
 }
 
@@ -87,4 +89,5 @@ header{
   header{
     height: 120vh;
   }
+
 }

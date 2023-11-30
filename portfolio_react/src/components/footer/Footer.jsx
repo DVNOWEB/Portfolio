@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaCodepen, FaGithub } from 'react-icons/fa'

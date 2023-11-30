@@ -1,7 +1,6 @@
-import React from 'react'
 import './About.css'
 import ME from '../../assets/images/DZ.png'
-import { FaAward } from 'react-icons/fa'
+import { GiNetworkBars } from 'react-icons/gi'
 import { FaUsers } from 'react-icons/fa'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 
@@ -20,7 +19,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
+              <GiNetworkBars className="about__icon"/>
               <h5>Experience</h5>
               <small>2+ years of study experience</small>
               <br />
@@ -55,7 +54,7 @@ const About = () => {
           </p>
 
           <a href="#contact" className="btn btn-primary">
-            Let's talk
+            Let`s talk
           </a>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Portfolio.css'
 import IMG1 from '../../assets/images/pf1.png'
 import IMG2 from '../../assets/images/pf2.png'
@@ -11,36 +10,42 @@ import IMG6 from '../../assets/images/pf6.png'
 const projectData = [
   {
     id: 1,
+    image: IMG4,
+    title: 'Co-Working Booking App',
+    description:
+      'Full Stack built with Next.js 14, React, Tailwind CSS, Prisma, MongoDB, and NextAuth',
+    github: 'https://github.com/DVNOWEB/co_working',
+    demo: 'https://www.youtube.com/watch?v=LJeURc3BPMA&t=68s',
+  },
+  {
+    id: 2,
     image: IMG1,
     title: 'My Portfolio React JS',
+    description: 'Minimal Portfolio page created with React and JavaScript and CSS',
     github: 'https://github.com/DVNOWEB/Portfolio.git',
     demo: 'https://youtu.be/ixi92hXmYOo',
   },
   {
-    id: 2,
-    image: IMG2,
-    title: 'Sign Up Form',
-    github: 'https://github.com/DVNOWEB/Sign_Up_Form.git',
-    demo: 'https://codepen.io/DVNO/pen/RweRGKM',
-  },
-  {
     id: 3,
-    image: IMG3,
-    title: 'Task list',
-    github: 'https://github.com/DVNOWEB/TaskList7.git',
-    demo: 'https://codepen.io/DVNO/pen/VwBxvmo',
+    image: IMG2,
+    title: 'Shoping Cart',
+    description: 'This project is a basic shopping cart built with React JS, TypeScript and Context',
+    github: 'https://github.com/DVNOWEB/webshop_project',
+    demo: 'https://youtu.be/AJE2hXOU41w',
   },
   {
     id: 4,
-    image: IMG4,
-    title: 'Fullstack Project ',
-    github: 'https://github.com/DVNOWEB/BlackEnd_project.git',
-    demo: 'https://youtu.be/uS2JnApRFHw',
+    image: IMG3,
+    title: 'Task list',
+    description: 'Created in JavaScript, HTML and Materialize CSS',
+    github: 'https://github.com/DVNOWEB/TaskList7.git',
+    demo: 'https://codepen.io/DVNO/pen/VwBxvmo',
   },
   {
     id: 5,
     image: IMG5,
     title: 'ChatOn',
+    description: 'Chat rooms created with NodeJS, Express, Socket.io',
     github: 'https://github.com/DVNOWEB/Chatrooms.git',
     demo: 'https://youtu.be/IYfOzZRVQqU',
   },
@@ -48,6 +53,7 @@ const projectData = [
     id: 6,
     image: IMG6,
     title: 'Web Chat',
+    description: 'Webchat created with NodeJS, Express, websockets',
     github: 'https://github.com/DVNOWEB/Chat.git',
     demo: 'https://youtu.be/HIHfGHOA0aQ',
   },
@@ -59,14 +65,17 @@ const Portfolio = () => {
       <h2>Project</h2>
 
       <div className="container portfolio__container">
-        {projectData.map(({ id, image, title, github, demo }) => {
+        {projectData.map(({ id, image, title, description, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+              <div className="portfolio__item-image" onClick={
+                () => window.open(demo, "_blank")
+              } >
+                <img src={image} alt={title} href={demo} />
               </div>
 
               <h3>{title}</h3>
+              <p className="p_description">{description}</p>
               <div className="portfolio__item-cta">
                 <a
                   href={github}

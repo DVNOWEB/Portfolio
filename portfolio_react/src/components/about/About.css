@@ -49,18 +49,18 @@
 }
 
 .about__icon{
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .about__card h5{
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: .5rem;
 }
 
 .about__card small{
-  font-size: .9rem;
+  font-size: 1.2rem;
   color: var(--color-light);
 }
 

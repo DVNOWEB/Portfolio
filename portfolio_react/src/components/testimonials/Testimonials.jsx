@@ -1,4 +1,3 @@
-import React from 'react'
 import './Testimonials.css'
 import AVT1 from '../../assets/images/av1.jpg'
 import AVT2 from '../../assets/images/av2.jpg'
@@ -25,9 +24,10 @@ const userTestimonials = [
   },
   {
     avatar: AVT2,
-    name: 'John Doe',
+    title: 'CEO Hår3000',
+    name: 'Gabriel Pulgu',
     review:
-      'John Doe, dolor sit amet consectetur adipisicing elit. Delectus soluta placeat necessitatibus esse corporis nostrum perferendis vitae dolorum expedita provident.',
+      'Responsive and very professional, they have made our website twice to our satisfaction. Now they have received a new project to build our new webshop, so far I am more than satisfied. I can highly recommend them.',
   },
   {
     avatar: AVT3,

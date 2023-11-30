@@ -1,7 +1,6 @@
-import React from 'react'
 import './Contact.css'
-import { MdOutlineSms } from 'react-icons/md'
-import { FiPhoneCall } from 'react-icons/fi'
+import { FaSms } from 'react-icons/fa'
+import { FaPhoneVolume } from 'react-icons/fa'
 import { SiWhatsapp } from 'react-icons/si'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
@@ -32,13 +31,13 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineSms className="contact__option-icon" />
+            <FaSms className="contact__option-icon" />
             <h4>SMS</h4>
             <a href="sms:+46707684648">Send SMS</a>
           </article>
 
           <article className="contact__option">
-            <FiPhoneCall className="contact__option-icon" />
+            <FaPhoneVolume className="contact__option-icon" />
             <h4>Phone</h4>
             <a href="tel:+46707684648">Call me</a>
           </article>

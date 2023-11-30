@@ -14,6 +14,12 @@
   transition: var(--transition);
 }
 
+.p_description{
+  font-size: 1rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
 .portfolio__item:hover{
   background: var(--color-bg-variant);
   cursor: default;
@@ -27,11 +33,17 @@
   overflow: hidden;
   object-fit: cover;
   object-position: center;
+  cursor: pointer;
 }
 
 .portfolio__item h3{
   margin: 1.2rem 0 2rem;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+.portfolio__item p{
+  font-size: 1.2rem;
 }
 
 .portfolio__item-cta{

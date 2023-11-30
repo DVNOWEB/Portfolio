@@ -23,6 +23,7 @@ footer a:hover {
   align-items: center;
   gap: 2rem;
   margin: 0 auto 3rem;
+  font-size: 1.2rem;
 }
 
 .footer__socials {
@@ -47,6 +48,7 @@ footer a:hover {
   font-size: 1rem;
   font-weight: 300;
   color: var(--color-primary);
+  font-size: large;
 }
 
 .scroll__up:hover{

@@ -1,10 +1,10 @@
-import React from 'react'
 import './Navbar.css'
-import { AiOutlineHome } from 'react-icons/ai'
-import { RiFileUserLine } from 'react-icons/ri'
-import { BiBook } from 'react-icons/bi'
-import { FaLaptopCode } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
+
+import { SiUpwork } from 'react-icons/si'
+import { SiAboutdotme } from 'react-icons/si'
+import { RiMacbookLine } from 'react-icons/ri'
+import { FaCode } from 'react-icons/fa6'
+import { SiMinutemailer } from 'react-icons/si'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -17,31 +17,31 @@ const Navbar = () => {
         href="#webdeveloper"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}>
-        <AiOutlineHome />
+        <SiUpwork />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}>
-        <RiFileUserLine />
+        <SiAboutdotme />
       </a>
       <a
         href="#skills"
         onClick={() => setActiveNav('#skills')}
         className={activeNav === '#skills' ? 'active' : ''}>
-        <BiBook />
+        <RiMacbookLine />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav('#services')}
-        className={activeNav === '#services' ? 'active' : ''}>
-        <FaLaptopCode />
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}>
+        <FaCode />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}>
-        <AiOutlineMail />
+        <SiMinutemailer />
       </a>
     </nav>
   )

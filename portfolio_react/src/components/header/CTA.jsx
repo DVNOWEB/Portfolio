@@ -1,6 +1,4 @@
-import React from 'react'
 import CV from '../../assets/DanoZaganjorCV.eng.pdf'
-
 
 const CTA = () => {
   return (
@@ -9,7 +7,7 @@ const CTA = () => {
         Check my CV 
       </a>
       <a href="#contact" className="btn btn-primary">
-        Let's talk
+        Let`s talk
       </a>
     </div>
   )

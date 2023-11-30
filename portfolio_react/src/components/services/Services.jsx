@@ -1,4 +1,3 @@
-import React from 'react'
 import './Services.css'
 import { BsCheck2Circle } from 'react-icons/bs'
 
@@ -7,18 +6,18 @@ const Services = () => {
     <section id="services">
       <p className="container header_p">
         I offer a range of dynamic services including web development, design,
-        consultation, and technical support. Whether you're looking to build a
+        consultation, and technical support. Whether you`re looking to build a
         brand new website from the ground up or elevate an existing one, I have
         the expertise to craft a customized solution tailored to your unique
         needs. From brainstorming cutting-edge design concepts to implementing
-        the latest web technologies, I'm dedicated to bringing your vision to
+        the latest web technologies, I`m dedicated to bringing your vision to
         life. With a keen focus on detail and a passion for delivering
-        unparalleled results, I'm committed to exceeding your expectations every
+        unparalleled results, I`m committed to exceeding your expectations every
         step of the way.
         <br />
         <br />
-        No matter the challenge, I'm here to help you achieve your goals and
-        take your online presence to the next level. Let's work together to
+        No matter the challenge, I`m here to help you achieve your goals and
+        take your online presence to the next level. Let`s work together to
         create a digital masterpiece that sets you apart from the competition.
       </p>
       <h2>Services</h2>
@@ -64,7 +63,7 @@ const Services = () => {
               <BsCheck2Circle className="service_list-icon" />
               <p>
                 Proficient in creating web pages using WordPress and its plugins
-                to build custom websites according to the client's requirements.
+                to build custom websites according to the client`s requirements.
               </p>
             </li>
             <li>

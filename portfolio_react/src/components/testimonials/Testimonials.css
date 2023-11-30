@@ -4,7 +4,7 @@
 }
 
 .client__avatar{
-  width: 4rem;
+  width: 8rem;
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 1rem;
@@ -22,13 +22,13 @@
 }
 
 .testimonial span{
-  font-size: .8rem;
+  font-size: 1rem;
   color: var(--color-white);
   margin: 1rem 0 0;
 }
 
 .client__name{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--color-light);
   margin: 1rem 0 0;
@@ -38,6 +38,7 @@
   display: block;
   width: 80%;
   font-weight: 400;
+  font-size: 1.2rem;
   color: var(--color-light);
   margin: 1rem auto 0;
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Skills.css'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
@@ -10,7 +9,7 @@ import { SiTypescript } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { MdDesignServices } from 'react-icons/md'
 import { FaFigma } from 'react-icons/fa'
-import { SiAdobexd } from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 import { BsWordpress } from 'react-icons/bs'
 import { DiScrum } from 'react-icons/di'
 import { SiElectron } from 'react-icons/si'
@@ -67,8 +66,14 @@ const Skills = () => {
             </article>
 
             <article className="skills__details">
+              <TbBrandNextjs className="skills__icon" />
+              <h4>NextJS</h4>
+              <small className="text-light">Basic</small>
+            </article>
+
+            <article className="skills__details">
               <FaNodeJs className="skills__icon" />
-              <h4>Node JS</h4>
+              <h4>NodeJS</h4>
               <small className="text-light">Basic</small>
             </article>
 
@@ -82,12 +87,6 @@ const Skills = () => {
               <FaFigma className="skills__icon" />
               <h4>Figma</h4>
               <small className="text-light">Intermediate</small>
-            </article>
-
-            <article className="skills__details">
-              <SiAdobexd className="skills__icon" />
-              <h4>Adobe XD</h4>
-              <small className="text-light">Basic</small>
             </article>
 
             <article className="skills__details">
@@ -110,7 +109,7 @@ const Skills = () => {
 
             <article className="skills__details">
               <SiMongodb className="skills__icon" />
-              <h4>Mongo DB</h4>
+              <h4>MongoDB</h4>
               <small className="text-light">Basic</small>
             </article>
           </div>
