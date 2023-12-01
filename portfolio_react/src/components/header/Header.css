@@ -28,7 +28,7 @@ header{
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
+  left: 12%;
   bottom: 3rem;
   font-size: large;
 }
@@ -67,6 +67,12 @@ header{
   header{
     height: 100vh;
   }
+
+  .header__socials{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+  }
 }
 
 /* Media queries S */
@@ -79,7 +85,9 @@ header{
   .header__socials{
     position: absolute;
     top: 5%;
+    left: 5%;
   }
+
   .scroll__down{
     display: none;
   }
@@ -87,7 +95,7 @@ header{
 
 @media screen and (max-width: 360px){
   header{
-    height: 120vh;
+    height: 100vh;
   }
 
 }

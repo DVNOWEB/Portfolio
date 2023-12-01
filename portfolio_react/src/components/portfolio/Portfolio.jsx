@@ -68,14 +68,15 @@ const Portfolio = () => {
         {projectData.map(({ id, image, title, description, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image" onClick={
-                () => window.open(demo, "_blank")
-              } >
-                <img src={image} alt={title} href={demo} />
+              <div
+                className="portfolio__item-image"
+                onClick={() => window.open(demo, '_blank')}>
+                <a href={demo} target="_blank" rel="noreferrer">
+                  <img src={image} alt={title} />
+                </a>
 
-
-              <h3>{title}</h3>
-              <p className="p_description">{description}</p>
+                <h3>{title}</h3>
+                <p className="p_description">{description}</p>
               </div>
 
               <div className="portfolio__item-cta">

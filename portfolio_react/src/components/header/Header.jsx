@@ -24,12 +24,12 @@ const Header = () => {
         </p>
         <CTA />
         </div>
-        <Socials />
 
         <a href="#contact" className="scroll__down">
           Scroll down
         </a>
       </div>
+      <Socials />
     </header>
   )
 }
