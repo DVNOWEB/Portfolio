@@ -11,7 +11,7 @@ const projectData = [
   {
     id: 1,
     image: IMG4,
-    title: 'Co-Working Booking App',
+    title: 'Co-Working Booking',
     description:
       'Full Stack built with Next.js 14, React, Tailwind CSS, Prisma, MongoDB, and NextAuth',
     github: 'https://github.com/DVNOWEB/co_working',
@@ -72,10 +72,12 @@ const Portfolio = () => {
                 () => window.open(demo, "_blank")
               } >
                 <img src={image} alt={title} href={demo} />
-              </div>
+
 
               <h3>{title}</h3>
               <p className="p_description">{description}</p>
+              </div>
+
               <div className="portfolio__item-cta">
                 <a
                   href={github}
