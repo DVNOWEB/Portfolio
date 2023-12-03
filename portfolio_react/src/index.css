@@ -74,7 +74,7 @@ h2{
 .header_span {
   padding: 2rem 0 1rem;
   font-weight: 500;
-  font-size: x-large;
+  font-size: large;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +173,7 @@ img {
 
   .container {
     width: var(--container-width-sm);
+    margin: 10rem auto;
   }
 
   section > h2 {
@@ -185,6 +186,11 @@ img {
 @media screen and (max-width: 320px) {
   html{
     font-size: 80%;
+  }
+
+  .container {
+    width: var(--container-width-sm);
+    margin: 10rem auto;
   }
   
   h1 {
