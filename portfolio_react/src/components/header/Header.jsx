@@ -12,7 +12,7 @@ const Header = () => {
         <h1>D&#581;NO Z&#581;G&#581;NJOR</h1>
         <span>FrontEnd Web Developer</span>
         <span className="header_span">
-          Creating Engaging Digital Experiences
+        Creating Intuitive and Responsive User Interfaces
         </span>
         <br />
         <p>
