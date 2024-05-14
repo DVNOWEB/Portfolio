@@ -22,7 +22,7 @@ const Skills = () => {
       <div className="container skills__container">
         <span className="header_span">A list of my technical skills</span>
         <h2>My skills</h2>
-        <div className="skills__frontand">
+        <div className="skills__frontend">
           <div className="skills__content">
             <article className="skills__details">
               <AiOutlineHtml5 className="skills__icon" />
