@@ -6,8 +6,8 @@
 }
 
 .about__me{
-  width: 100%;
-  aspect-ratio: 1/1;
+  width: 80%;
+  aspect-ratio: 1/1.8;
   border-radius: 2rem;
   background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
   display: grid;
@@ -28,7 +28,7 @@
 /* Right side cards  */
 .about__cards{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -37,7 +37,7 @@
   backdrop-filter: blur(30px);
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.5rem .5rem;
   text-align: center;
   transition: var(--transition);
 }
@@ -55,12 +55,20 @@
 }
 
 .about__card h5{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.about__card h6{
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-top: .5rem;
   margin-bottom: .5rem;
 }
 
 .about__card small{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-light);
 }
 

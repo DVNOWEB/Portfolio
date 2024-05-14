@@ -4,7 +4,7 @@ import { DiCss3 } from 'react-icons/di'
 import { FaSass } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
-import { FaVuejs } from 'react-icons/fa'
+import { TbBrandReactNative } from "react-icons/tb";
 import { SiTypescript } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { MdDesignServices } from 'react-icons/md'
@@ -12,7 +12,8 @@ import { FaFigma } from 'react-icons/fa'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { BsWordpress } from 'react-icons/bs'
 import { DiScrum } from 'react-icons/di'
-import { SiElectron } from 'react-icons/si'
+import { SiTailwindcss } from "react-icons/si";
+
 import { SiMongodb } from 'react-icons/si'
 
 const Skills = () => {
@@ -54,9 +55,9 @@ const Skills = () => {
             </article>
 
             <article className="skills__details">
-              <FaVuejs className="skills__icon" />
-              <h4>Vue</h4>
-              <small className="text-light">Basic</small>
+              <TbBrandReactNative className="skills__icon" />
+              <h4>React-Native</h4>
+              <small className="text-light">Intermediate</small>
             </article>
 
             <article className="skills__details">
@@ -102,9 +103,9 @@ const Skills = () => {
             </article>
 
             <article className="skills__details">
-              <SiElectron className="skills__icon" />
-              <h4>Electron</h4>
-              <small className="text-light">Basic</small>
+              <SiTailwindcss className="skills__icon" />
+              <h4>Tailwind</h4>
+              <small className="text-light">Intermediate</small>
             </article>
 
             <article className="skills__details">

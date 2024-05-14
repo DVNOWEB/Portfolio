@@ -10,17 +10,13 @@ const Header = () => {
         <div className='header_box'>
         <span className="header_span">Innovative Web Design by</span>
         <h1>D&#581;NO Z&#581;G&#581;NJOR</h1>
-        <span>FrontEnd Web Developer</span>
+        <span>Frontend Developer</span>
         <span className="header_span">
         Creating Intuitive and Responsive User Interfaces
         </span>
         <br />
         <p>
-          As a passionate frontend web developer with a keen eye for both
-          aesthetics and functionality, I am dedicated to creating intuitive and
-          user-friendly interfaces. My creativity and technical expertise enable
-          me to translate client`s needs into visually appealing and functional
-          designs.
+        With a strong passion for frontend development, I excel at integrating design and functionality to develop user-friendly interfaces. My commitment and creativity allow me to effectively transform client visions into practical and attractive designs.
         </p>
         <CTA />
         </div>

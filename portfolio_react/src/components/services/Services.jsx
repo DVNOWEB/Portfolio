@@ -25,52 +25,59 @@ const Services = () => {
       <div className="container service__container">
         <article className="service">
           <div className="service__header">
-            <h3>FrontEnd web devolopment</h3>
+            <h3>Frontend development</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Skilled in developing websites using HTML and CSS, including
-                responsive design and basic SEO/search engine optimization.
+                Expert in crafting websites with HTML and CSS, focusing on
+                responsive design and basic SEO to ensure optimal performance
+                and visibility across all devices.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Customization of websites for accessibility and familiarity with
-                various CSS frameworks such as SASS, Bootstrap, and Materialize.
+                Skilled in enhancing website aesthetics and functionality using
+                Sass. Experienced in implementing JavaScript for dynamic and
+                interactive web elements, ensuring robust testing and
+                compatibility.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Knowledge of web standards and ability to implement ready-made
-                JavaScript code and perform testing of web solutions for
-                HTML/CSS.
+                Proficient in using React to build scalable web applications and
+                React Native for crafting cross-platform mobile apps, focusing
+                on optimal user experience and performance.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Experience working with frontend frameworks such as React and
-                Vue to create scalable web applications, and using Typescript to
-                write secure and maintainable code.
+                Familiar with TypeScript for adding strong typing to JavaScript,
+                enhancing code quality and maintainability. Basic knowledge of
+                NextJS for improving web application performance through
+                server-side rendering.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Proficient in creating web pages using WordPress and its plugins
-                to build custom websites according to the client`s requirements.
+                Competent in UI/UX design, utilizing tools like Figma to
+                prototype and create user-centric designs that are both
+                appealing and functional, ensuring a seamless user interface.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Experience working with UI/UX design programs such as Figma and
-                Adobe XD to create engaging and user-friendly interfaces.
+                Highly skilled in using WordPress to develop custom websites
+                tailored to specific client needs, incorporating various plugins
+                and themes. Proficient in applying Scrum techniques to
+                streamline project processes and enhance team collaboration.
               </p>
             </li>
           </ul>
@@ -79,31 +86,35 @@ const Services = () => {
         {/* Second box */}
         <article className="service">
           <div className="service__header">
-            <h3>BackEnd web devolopment</h3>
+            <h3>Backend development</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                I am familiar with NodeJS, which enables running JavaScript
-                outside of the browser.
+                Skilled in utilizing NodeJS to run JavaScript outside of a
+                traditional browser environment, enabling the development of
+                scalable and efficient server-side applications.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                Knowledgeable in NoSQL databases that store data in JSON-like
-                format and able to use NodeJS and MongoDB together to develop
-                scalable web applications and APIs.
+                Knowledgeable in NoSQL database technologies, especially
+                MongoDB. Experienced in designing and implementing database
+                solutions that store and manage data efficiently in a JSON-like
+                format, optimizing data retrieval and scalability.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                I understand how to build REST APIs with Express, which means
-                that I can create simple and consistent interfaces for
-                interacting with your databases.
+                Proficient in using Express to build robust REST APIs,
+                facilitating seamless interactions between client-side and
+                server-side technologies. Skilled in creating consistent and
+                straightforward API endpoints that enhance the functionality of
+                web applications.
               </p>
             </li>
             <li>
@@ -126,15 +137,7 @@ const Services = () => {
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                As a project member, I have worked with various methodologies
-                including agile, Scrum, Kanban, and non-agile models. Through my
-                experiences, I have gained insight into the benefits and
-                challenges of each method and can adapt my work accordingly.
-                <br />
-                Additionally, I have expertise in handling development tools and
-                version control, as well as efficiently gathering and setting
-                requirements. Test-driven development is a vital part of my
-                methodology to maintain high quality.
+              I have experience with multiple project methodologies, including Agile, Scrum, Kanban, and traditional models. My diverse background helps me understand and adapt to each method&apos;s unique demands. I am proficient with development tools, version control, and prioritizing test-driven development to ensure quality in every project.
               </p>
             </li>
           </ul>
@@ -150,18 +153,13 @@ const Services = () => {
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                With my solid knowledge in UX design, usability, behavioral
-                science, and communication theory, I have a deep understanding
-                of target audiences and their needs. This enables me to create
-                user-centered websites that effectively support all user groups.
+              With a strong foundation in UX design principles, usability, behavioral science, and communication theory, I deeply understand target audiences and their needs. This expertise allows me to develop user-centered websites that cater effectively to all user groups.
               </p>
             </li>
             <li>
               <BsCheck2Circle className="service_list-icon" />
               <p>
-                I also have extensive experience in using various techniques and
-                tools to create efficient UI designs, which allows me to
-                implement these design concepts effectively in web applications.
+              I have extensive experience in UI design, employing various techniques and tools to craft efficient interfaces. My approach includes using atomic design principles to build scalable and maintainable design systems, ensuring consistency and quality across web applications.
               </p>
             </li>
           </ul>

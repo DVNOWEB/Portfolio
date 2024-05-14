@@ -1,5 +1,5 @@
 import './About.css'
-import ME from '../../assets/images/DZ.png'
+import ME from '../../assets/images/d1.jpg'
 import { GiNetworkBars } from 'react-icons/gi'
 import { FaUsers } from 'react-icons/fa'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
@@ -20,37 +20,45 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <GiNetworkBars className="about__icon" />
-              <h5>Experience</h5>
-              <small>2+ years of study experience</small>
+              <h5>Education and Experience</h5>
+              <small>
+                KYH University of Applied Sciences
+                <br />
+                Stockholm
+              </small>
+              <h6>Frontend developer</h6>
               <br />
-              <small>3+ years self-employed</small>
+              <small>
+                DVNOWEB WEB AGENCY
+                <br />
+                Stockholm
+              </small>
+              <h6>CEO / founder</h6>
+              <small>since 2019</small>
               <br />
-              <small>28+ years of work experience</small>
             </article>
             <article className="about__card">
               <FaUsers className="about__icon" />
-              <h5>Customers</h5>
-              <small>20+ Worldwide</small>
+              <h5>Global Clientele</h5>
+              <small>Serving over 20 clients worldwide</small>
               <article className="about__card">
                 <AiOutlineFundProjectionScreen className="about__icon" />
-                <h5>Projects</h5>
-                <small>20+ Completed</small>
+                <h5>Diverse Projects</h5>
+                <small>Successfully completed 20+ projects</small>
               </article>
             </article>
           </div>
 
           <p>
-            I am a driven and ambitious individual who always strives to do my
-            best. I have an eye for detail and keep up-to-date with the latest
-            trends in my industry.
-            <br />
-            <br />
-            My natural ability to communicate and collaborate makes me a quick
-            learner and flexible team player. Moreover, I am motivated by
-            continuous improvement and hope to contribute to your team with my
-            enthusiasm and skills while continuing to grow both personally and
-            professionally. I am excited to take on new challenges and bring my
-            unique flair to every project.
+          I am a driven and ambitious professional, committed to excellence in everything I do. With a keen eye for detail, I stay at the forefront of industry trends to provide cutting-edge solutions.
+          </p>
+          <p>
+            My strong communication skills and natural ability to collaborate
+            make me a quick learner and a versatile team member. I am deeply
+            motivated by the pursuit of continual improvement and am eager to
+            bring my enthusiasm and expertise to your team. I look forward to
+            tackling new challenges and infusing every project with my unique
+            flair.
           </p>
 
           <a href="#contact" className="btn btn-primary">
