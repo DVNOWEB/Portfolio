@@ -93,9 +93,25 @@ header{
   }
 }
 
+@media screen and (max-width: 425px){
+  header{
+    height: 100vh;
+  }
+
+  .header__container{
+    justify-content: flex-start;
+  }
+
+}
+
 @media screen and (max-width: 360px){
   header{
     height: 100vh;
+  }
+
+  .header__container{
+    justify-content: flex-start;
+    padding-top: 7rem;
   }
 
 }

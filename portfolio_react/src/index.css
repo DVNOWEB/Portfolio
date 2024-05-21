@@ -176,7 +176,7 @@ img {
 
   .container {
     width: var(--container-width-sm);
-    margin: .5rem auto;
+    margin: 5rem auto;
   }
 
   section > h2 {
@@ -198,15 +198,16 @@ img {
 
 /* Media extra S */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   html {
     font-size: 80%;
   }
 
-  .container {
+  .container{
     width: var(--container-width-sm);
     margin: .5rem auto;
   }
+  
 
   h1 {
     font-size: 2.5rem;

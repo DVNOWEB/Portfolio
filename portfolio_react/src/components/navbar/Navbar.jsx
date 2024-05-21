@@ -29,13 +29,13 @@ const Navbar = () => {
         href="#skills"
         onClick={() => setActiveNav('#skills')}
         className={activeNav === '#skills' ? 'active' : ''}>
-        <RiMacbookLine />
+        <FaCode />
       </a>
       <a
         href="#portfolio"
         onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}>
-        <FaCode />
+        <RiMacbookLine />
       </a>
       <a
         href="#contact"
