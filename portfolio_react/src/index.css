@@ -108,7 +108,7 @@ section > h2 {
 }
 
 p {
-  font-size: large;
+  font-size: medium;
   font-weight: 300;
 }
 
@@ -167,7 +167,7 @@ img {
 
 @media screen and (max-width: 598px) {
   html {
-    font-size: 70%;
+    font-size: 85%;
   }
 
   nav a {
@@ -176,7 +176,7 @@ img {
 
   .container {
     width: var(--container-width-sm);
-    margin: 7rem auto;
+    margin: .5rem auto;
   }
 
   section > h2 {
@@ -184,7 +184,7 @@ img {
   }
 
   .service__list p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .header_p {
@@ -205,7 +205,7 @@ img {
 
   .container {
     width: var(--container-width-sm);
-    margin: 10rem auto;
+    margin: .5rem auto;
   }
 
   h1 {
