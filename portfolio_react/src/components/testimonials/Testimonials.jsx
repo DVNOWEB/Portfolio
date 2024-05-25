@@ -5,14 +5,15 @@ import AVT3 from '../../assets/images/av3.jpg'
 import AVT4 from '../../assets/images/av4.jpg'
 
 // import Swiper core and required modules
-import {Pagination} from 'swiper';
+import { Pagination } from 'swiper'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { useTranslation } from 'react-i18next'
 
 const userTestimonials = [
   {
@@ -44,10 +45,11 @@ const userTestimonials = [
 ]
 
 const Testimonials = () => {
+  const { t } = useTranslation()
   return (
     <section id="testimonials">
-      <span className="header_span">What people say about me</span>
-      <h2>Reviews</h2>
+      <span className="header_span">{t('testimonialsSpan')}</span>
+      <h2>{t('testimonialsH2')}</h2>
 
       <Swiper
         className="container testimonials__container"

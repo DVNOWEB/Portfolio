@@ -1,36 +1,52 @@
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaCodepen, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <footer>
       <div className="container footer__container">
         <a href="#webdeveloper" className="scroll__up">
-          Scroll up
+          {t('footerA1')}
         </a>
 
         <ul className="permalinks">
           <li>
-            <a href="#webdeveloper">Top</a>
+            <a href="#webdeveloper">
+              {t('footerA2')}
+            </a>
           </li>
           <li>
-            <a href="#about">About me</a>
+            <a href="#about">
+              {t('footerA3')}
+            </a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">
+              {t('footerA4')}
+            </a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">
+              {t('footerA5')}
+            </a>
           </li>
           <li>
-            <a href="#portfolio">Project</a>
+            <a href="#portfolio">
+              {t('footerA6')}
+            </a>
           </li>
           <li>
-            <a href="#testimonials">Reviews</a>
+            <a href="#testimonials">
+              {t('footerA7')}
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+              {t('footerA8')}
+            </a>
           </li>
         </ul>
 
@@ -50,7 +66,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <small>&copy; D&#581;NO Z&#581;G&#581;NJOR All rights reserved.</small>
+        <small>&copy; D&#581;NO Z&#581;G&#581;NJOR{' '}
+          {t('footerCopy')}
+        </small>
       </div>
     </footer>
   )

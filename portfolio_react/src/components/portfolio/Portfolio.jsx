@@ -5,6 +5,7 @@ import IMG3 from '../../assets/images/pf3.png'
 import IMG4 from '../../assets/images/pf4.png'
 import IMG5 from '../../assets/images/pf5.png'
 import IMG6 from '../../assets/images/pf6.png'
+import { useTranslation } from 'react-i18next'
 
 // Array with data for the projects
 const projectData = [
@@ -21,7 +22,8 @@ const projectData = [
     id: 2,
     image: IMG1,
     title: 'My Portfolio React JS',
-    description: 'Minimal Portfolio page created with React and JavaScript and CSS',
+    description:
+      'Minimal Portfolio page created with React and JavaScript and CSS',
     github: 'https://github.com/DVNOWEB/Portfolio.git',
     demo: 'https://youtu.be/ixi92hXmYOo',
   },
@@ -29,7 +31,8 @@ const projectData = [
     id: 3,
     image: IMG2,
     title: 'Shoping Cart',
-    description: 'This project is a basic shopping cart built with React JS, TypeScript and Context',
+    description:
+      'This project is a basic shopping cart built with React JS, TypeScript and Context',
     github: 'https://github.com/DVNOWEB/webshop_project',
     demo: 'https://youtu.be/AJE2hXOU41w',
   },
@@ -59,10 +62,11 @@ const projectData = [
   },
 ]
 const Portfolio = () => {
+  const { t } = useTranslation()
   return (
     <section id="portfolio">
-      <span className="header_span">My latest work</span>
-      <h2>Project</h2>
+      <span className="header_span">{t('portfolioSpan')}</span>
+      <h2>{t('portfolioH2')}</h2>
 
       <div className="container portfolio__container">
         {projectData.map(({ id, image, title, description, github, demo }) => {

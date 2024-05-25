@@ -21,36 +21,26 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="container skills__container">
-        <span className="header_span">
-          {t('skillsSpan')}
-        </span>
-        <h2>
-          {t('skillsH2')}
-        </h2>
+        <span className="header_span">{t('skillsSpan')}</span>
+        <h2>{t('skillsH2')}</h2>
         <div className="skills__frontend">
           <div className="skills__content">
             <article className="skills__details">
               <AiOutlineHtml5 className="skills__icon" />
               <h4>HTML</h4>
-              <small className="text-light">
-                {t('skillsSmall')}
-              </small>
+              <small className="text-light">{t('skillsSmall')}</small>
             </article>
 
             <article className="skills__details">
               <DiCss3 className="skills__icon" />
               <h4>CSS</h4>
-              <small className="text-light">
-                {t('skillsSmall')}
-              </small>
+              <small className="text-light">{t('skillsSmall')}</small>
             </article>
 
             <article className="skills__details">
               <FaSass className="skills__icon" />
               <h4>Sass</h4>
-              <small className="text-light">
-                {t('skillsSmall1')}
-              </small>
+              <small className="text-light">{t('skillsSmall1')}</small>
             </article>
 
             <article className="skills__details">
@@ -104,9 +94,7 @@ const Skills = () => {
             <article className="skills__details">
               <BsWordpress className="skills__icon" />
               <h4>WordPress</h4>
-              <small className="text-light">
-                {t('skillsSmall')}
-              </small>
+              <small className="text-light">{t('skillsSmall')}</small>
             </article>
 
             <article className="skills__details">

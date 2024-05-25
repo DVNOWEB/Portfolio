@@ -4,10 +4,12 @@ import { FaPhoneVolume } from 'react-icons/fa'
 import { SiWhatsapp } from 'react-icons/si'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
+import { useTranslation } from 'react-i18next'
 
 
 
 const Contact = () => {
+  const { t } = useTranslation()
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -25,27 +27,39 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <span className="header_span">Get in touch with me</span>
-      <h2>Contact</h2>
+      <span className="header_span">
+        {t('contactSpan')}
+      </span>
+      <h2>
+        {t('contactH2')}
+      </h2>
 
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <FaSms className="contact__option-icon" />
             <h4>SMS</h4>
-            <a href="sms:+46707684648">Send SMS</a>
+            <a href="sms:+46707684648">
+              {t('contactA1')}
+            </a>
           </article>
 
           <article className="contact__option">
             <FaPhoneVolume className="contact__option-icon" />
-            <h4>Phone</h4>
-            <a href="tel:+46707684648">Call me</a>
+            <h4>
+              {t('contactH4')}
+            </h4>
+            <a href="tel:+46707684648">
+              {t('contactA2')}
+            </a>
           </article>
 
           <article className="contact__option">
             <SiWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <a href="https://wa.me/0046707684648">Call me or send me an SMS</a>
+            <a href="https://wa.me/0046707684648">
+              {t('contactA3')}
+            </a>
           </article>
         </div>
 
@@ -53,22 +67,22 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your full name"
+            placeholder={t('contactInput1')}
             required
           />
           <input
             type="email"
             name="email"
-            placeholder="Your email address"
+            placeholder={t('contactInput2')}
             required
           />
           <textarea
             name="message"
             rows="7"
-            placeholder="Your message"
+            placeholder={t('contactInput3')}
             required></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {t('contactBtn')}
           </button>
         </form>
       </div>
