@@ -1,10 +1,12 @@
 import {BsLinkedin} from 'react-icons/bs'
 import {FaCodepen} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
+import LangSelector from '../LangSelector'
 
 const Socials = () => {
   return (
     <div className="header__socials">
+      <LangSelector />
       <a
         href="https://www.linkedin.com/in/dano-zaganjor"
         target="_blank"
