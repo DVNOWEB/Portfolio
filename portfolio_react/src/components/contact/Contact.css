@@ -65,6 +65,11 @@ input, textarea{
   resize: none;
 }
 
+.feedback-message{
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
 
 /* Media queries S-M */
 

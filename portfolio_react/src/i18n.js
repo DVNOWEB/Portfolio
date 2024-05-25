@@ -109,6 +109,8 @@ i18n
           contactInput2: 'Din e-postadress',
           contactInput3: 'Ditt meddelande',
           contactBtn: 'Skicka meddelande',
+          contactAlertSuccess: 'Meddelandet skickades!',
+          contactAlertError: 'Ett fel uppstod. Försök igen.',
           // Footer
           footerA1: 'Skrolla upp',
           footerA2: 'Upp',
@@ -220,6 +222,8 @@ i18n
           contactInput2: 'Your email address',
           contactInput3: 'Your message',
           contactBtn: 'Send message',
+          contactAlertSuccess: 'Message sent successfully!',
+          contactAlertError: 'An error occurred. Please try again.',
           // Footer
           footerA1: 'Scroll up',
           footerA2: 'Top',
