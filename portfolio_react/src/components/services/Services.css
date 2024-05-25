@@ -5,7 +5,7 @@
 }
 
 .header_p {
-  font-size: 1.2rem;
+  font-size: medium;
   color: var(--color-light);
   text-align: center;
   padding: 2rem 0;
@@ -57,7 +57,7 @@
 
 .service__list p {
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: medium;
   color: var(--color-light);
 }
 

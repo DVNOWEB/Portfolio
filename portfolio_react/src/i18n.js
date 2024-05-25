@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: 'sv',
+    lng: 'en',
     resources: {
       sv: {
         translation: {
@@ -81,6 +81,23 @@ i18n
           // Testimonials
           testimonialsSpan: 'Vad folk säger om mig',
           testimonialsH2: 'Recensioner',
+          testimonials: [
+            {
+              id: 't1',
+              avatar: 'AVT1',
+              title: 'VD för VAconsulting',
+              name: 'Vladan Andric',
+              review: "DVNOWEB AB är ett lyhört, kunnigt och ytterst professionellt företag. De byggde en fantastiskt fin webbplats för mitt företag, VAconsulting. De sköter allt, vilket är skönt eftersom småföretagare ofta inte har tid med sådana uppgifter. Dessutom är de välinsatta och kreativa när det gäller att föreslå nya lösningar för att sticka ut lite."
+            },
+            {
+              id: 't2',
+              avatar: 'AVT2',
+              title: 'VD för Hår3000',
+              name: 'Gabriel Pulgu',
+              review: "Responsiva och mycket professionella, de har gjort vår webbplats två gånger till vår belåtenhet. Nu har de fått ett nytt projekt att bygga vår nya webbshop, hittills är jag mer än nöjd. Jag kan varmt rekommendera dem."
+            },
+            // More testimonials
+          ],
           // Contact
           contactSpan: 'Hör av dig till mig',
           contactH4: 'Telefon',
@@ -175,6 +192,23 @@ i18n
           // Testimonials
           testimonialsSpan: 'What people say about me',
           testimonialsH2: 'Reviews',
+          testimonials: [
+            {
+              id: 't1',
+              avatar: 'AVT1',
+              title: 'CEO VAconsulting',
+              name: 'Vladan Andric',
+              review: "DVNOWEB AB is a responsive, knowledgeable and thoroughly professional company. They built a super nice site for my company VAconsulting. They take care of everything, which is nice because you don't really have that time for small business owners. They are also well-read and creative about new solutions to stand out a little."
+            },
+            {
+              id: 't2',
+              avatar: 'AVT2',
+              title: 'CEO Hår3000',
+              name: 'Gabriel Pulgu',
+              review: "Responsive and very professional, they have made our website twice to our satisfaction. Now they have received a new project to build our new webshop, so far I am more than satisfied. I can highly recommend them."
+            },
+            // More testimonials
+          ],
           // Contact
           contactSpan: 'Get in touch with me',
           contactH4: 'Phone',
