@@ -1,5 +1,5 @@
 import './About.css'
-import ME from '../../assets/images/d1.jpg'
+import ME from '../../assets/images/d2.jpg'
 import { GiNetworkBars } from 'react-icons/gi'
 import { FaUsers } from 'react-icons/fa'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'

@@ -34,6 +34,10 @@ nav a.active{
   color: var(--color-primary);
 }
 
+.about_span{
+  font-weight: 500;
+}
+
 /* Media Small mobiles */
 @media screen and (max-width: 576px){
   nav{
