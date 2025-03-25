@@ -11,6 +11,14 @@ import { useTranslation } from 'react-i18next'
 const projectData = [
   {
     id: 1,
+    image: IMG6,
+    title: 'NextJS Full Stack Event Booking app',
+    description: 'NextJS, TypeScript, Convex, Stripe, Clerk, Tailwind CSS',
+    github: 'https://github.com/DVNOWEB/Chat.git',
+    demo: 'https://github.com/DVNOWEB',
+  },
+  {
+    id: 2,
     image: IMG4,
     title: 'Co-Working Booking',
     description:
@@ -19,22 +27,13 @@ const projectData = [
     demo: 'https://www.youtube.com/watch?v=LJeURc3BPMA&t=68s',
   },
   {
-    id: 2,
+    id: 3,
     image: IMG1,
     title: 'My Portfolio React JS',
     description:
       'Minimal Portfolio page created with React and JavaScript and CSS',
     github: 'https://github.com/DVNOWEB/Portfolio.git',
-    demo: 'https://youtu.be/ixi92hXmYOo',
-  },
-  {
-    id: 3,
-    image: IMG2,
-    title: 'Shoping Cart',
-    description:
-      'This project is a basic shopping cart built with React JS, TypeScript and Context',
-    github: 'https://github.com/DVNOWEB/webshop_project',
-    demo: 'https://youtu.be/AJE2hXOU41w',
+    demo: 'https://danozaganjor.com/#webdeveloper',
   },
   {
     id: 4,
@@ -54,11 +53,12 @@ const projectData = [
   },
   {
     id: 6,
-    image: IMG6,
-    title: 'Web Chat',
-    description: 'Webchat created with NodeJS, Express, websockets',
-    github: 'https://github.com/DVNOWEB/Chat.git',
-    demo: 'https://youtu.be/HIHfGHOA0aQ',
+    image: IMG2,
+    title: 'Shoping Cart',
+    description:
+      'This project is a basic shopping cart built with React JS, TypeScript and Context',
+    github: 'https://github.com/DVNOWEB/webshop_project',
+    demo: 'https://youtu.be/AJE2hXOU41w',
   },
 ]
 const Portfolio = () => {
