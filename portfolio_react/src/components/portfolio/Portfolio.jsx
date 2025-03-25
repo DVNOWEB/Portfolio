@@ -14,8 +14,8 @@ const projectData = [
     image: IMG6,
     title: 'NextJS Full Stack Event Booking app',
     description: 'NextJS, TypeScript, Convex, Stripe, Clerk, Tailwind CSS',
-    github: 'https://github.com/DVNOWEB/Chat.git',
-    demo: 'https://github.com/DVNOWEB',
+    github: 'https://github.com/DVNOWEB',
+    demo: 'https://youtu.be/CaN9S1Iy5i8',
   },
   {
     id: 2,
