@@ -7,10 +7,12 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import './index.css' // We'll put the CSS here
 
 const App = () => {
   return (
     <>
+      <div className="bg-fixed" />
       <Header />
       <Navbar />
       <About />
