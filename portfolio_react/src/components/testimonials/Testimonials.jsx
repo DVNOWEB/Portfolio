@@ -1,8 +1,8 @@
 import './Testimonials.css'
-import AVT1 from '../../assets/images/av1.jpg'
-import AVT2 from '../../assets/images/av2.jpg'
-import AVT3 from '../../assets/images/av3.jpg'
-import AVT4 from '../../assets/images/av4.jpg'
+import AVT1 from '../../public/images/av1.jpg'
+import AVT2 from '../../public/images/av2.jpg'
+import AVT3 from '../../public/images/av3.jpg'
+import AVT4 from '../../public/images/av4.jpg'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper'

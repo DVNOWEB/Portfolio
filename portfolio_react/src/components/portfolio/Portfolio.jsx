@@ -1,10 +1,10 @@
 import './Portfolio.css'
-import IMG1 from '../../assets/images/pf1.png'
-import IMG2 from '../../assets/images/pf2.png'
-import IMG3 from '../../assets/images/pf3.png'
-import IMG4 from '../../assets/images/pf4.png'
-import IMG5 from '../../assets/images/pf5.png'
-import IMG6 from '../../assets/images/pf6.png'
+import IMG1 from '../../public/images/pf1.png'
+import IMG2 from '../../public/images/pf2.png'
+import IMG3 from '../../public/images/pf3.png'
+import IMG4 from '../../public/images/pf4.png'
+import IMG5 from '../../public/images/pf5.png'
+import IMG6 from '../../public/images/pf6.png'
 import { useTranslation } from 'react-i18next'
 
 // Array with data for the projects
