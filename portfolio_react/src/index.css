@@ -17,7 +17,6 @@
   --color-primary-variant: rgba(77, 181, 255, 0.5);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.8);
-
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -25,7 +24,9 @@
   --transition: all 0.4s ease;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   scroll-behavior: smooth;
   transition: var(--transition);
   font-size: 100%;
@@ -46,10 +47,9 @@ body {
   position: fixed;
   inset: 0;
   background: url('/images/b2.jpg') center / cover no-repeat;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
-
 
 /* Container style general */
 
@@ -156,13 +156,14 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-fixed { will-change: auto; }
+  .bg-fixed {
+    will-change: auto;
+  }
 }
 
 /* Media queries M */
 
 @media screen and (max-width: 1024px) {
-
   .container {
     width: var(--container-width-md);
     margin: 0 auto;
@@ -175,7 +176,13 @@ img {
 /* Media queries S */
 
 @media screen and (max-width: 598px) {
-  
+  .bg-fixed {
+    background-image: linear-gradient(135deg, #000415, #002245, #000205);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   html {
     font-size: 85%;
   }
@@ -209,15 +216,18 @@ img {
 /* Media extra S */
 
 @media screen and (max-width: 360px) {
+  .bg-fixed {
+    background: linear-gradient(135deg, #000415, #002245, #000205);
+  }
+
   html {
     font-size: 80%;
   }
 
-  .container{
+  .container {
     width: var(--container-width-sm);
-    margin: .5rem auto;
+    margin: 0.5rem auto;
   }
-  
 
   h1 {
     font-size: 2.5rem;

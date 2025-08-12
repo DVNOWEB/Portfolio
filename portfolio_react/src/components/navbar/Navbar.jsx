@@ -1,7 +1,8 @@
 import './Navbar.css'
 
+import { FaAngleDoubleUp } from "react-icons/fa";
 import { SiUpwork } from 'react-icons/si'
-import { SiAboutdotme } from 'react-icons/si'
+import { TiInfoLarge } from "react-icons/ti";
 import { RiMacbookLine } from 'react-icons/ri'
 import { FaCode } from 'react-icons/fa6'
 import { SiMinutemailer } from 'react-icons/si'
@@ -17,15 +18,18 @@ const Navbar = () => {
         href="#webdeveloper"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}>
-        <SiUpwork />
+        {/* <SiUpwork /> */}
+        <FaAngleDoubleUp />
+
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}>
-        <span className='about_span'>
+        {/* <span className='about_span'>
           ME
-        </span>
+        </span> */}
+        <TiInfoLarge />
       </a>
       <a
         href="#skills"
