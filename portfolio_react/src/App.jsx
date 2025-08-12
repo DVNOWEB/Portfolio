@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer'
 const App = () => {
   return (
     <>
+      <div className="bg-fixed" aria-hidden="true" />
       <Header />
       <Navbar />
       <About />

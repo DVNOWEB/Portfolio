@@ -25,7 +25,7 @@
   --transition: all 0.4s ease;
 }
 
-html {
+html, body, #root {
   scroll-behavior: smooth;
   transition: var(--transition);
   font-size: 100%;
@@ -40,12 +40,14 @@ body {
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  background-image: url(../src/public/images/b2.jpg);
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-origin: border-box;
+}
+
+.bg-fixed {
+  position: fixed;
+  inset: 0;
+  background: url('/images/b2.jpg') center / cover no-repeat;
+  z-index: 0;
+  pointer-events: none;
 }
 
 
@@ -151,6 +153,10 @@ img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-fixed { will-change: auto; }
 }
 
 /* Media queries M */
