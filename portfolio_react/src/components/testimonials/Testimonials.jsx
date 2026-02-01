@@ -57,7 +57,7 @@ const Testimonials = () => {
   const { t, i18n } = useTranslation()
   const testimonials = i18n.getResourceBundle(
     i18n.language,
-    'translation'
+    'translation',
   ).testimonials
 
   return (
@@ -75,7 +75,7 @@ const Testimonials = () => {
         {testimonials.map(({ avatar, title, name, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
-              <div className='client__avatar' key={index}>
+              <div className="client__avatar" key={index}>
                 <img src={avatars[avatar]} alt={name} />
               </div>
               <h5 className="client__name">{name}</h5>
