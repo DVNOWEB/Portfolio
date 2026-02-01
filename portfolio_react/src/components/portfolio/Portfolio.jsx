@@ -1,11 +1,13 @@
 import './Portfolio.css'
-import IMG1 from '/images/pf1.png'
-import IMG2 from '/images/pf2.png'
-import IMG3 from '/images/pf3.png'
-import IMG4 from '/images/pf4.png'
-import IMG5 from '/images/pf5.png'
-import IMG6 from '/images/pf6.png'
 import { useTranslation } from 'react-i18next'
+
+const baseUrl = import.meta.env.BASE_URL
+const IMG1 = `${baseUrl}images/pf1.png`
+const IMG2 = `${baseUrl}images/pf2.png`
+const IMG3 = `${baseUrl}images/pf3.png`
+const IMG4 = `${baseUrl}images/pf4.png`
+const IMG5 = `${baseUrl}images/pf5.png`
+const IMG6 = `${baseUrl}images/pf6.png`
 
 // Array with data for the projects
 const projectData = [

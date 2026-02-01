@@ -9,9 +9,15 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
+  const baseUrl = import.meta.env.BASE_URL
+  const bgImage = `url(${baseUrl}images/b2.jpg)`
   return (
     <>
-      <div className="bg-fixed" aria-hidden="true" />
+      <div
+        className="bg-fixed"
+        style={{ '--bg-image': bgImage }}
+        aria-hidden="true"
+      />
       <Header />
       <Navbar />
       <About />

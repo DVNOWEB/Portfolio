@@ -1,8 +1,4 @@
 import './Testimonials.css'
-import AVT1 from '/images/av1.jpg'
-import AVT2 from '/images/av2.jpg'
-import AVT3 from '/images/av3.jpg'
-import AVT4 from '/images/av4.jpg'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper'
@@ -14,6 +10,12 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { useTranslation } from 'react-i18next'
+
+const baseUrl = import.meta.env.BASE_URL
+const AVT1 = `${baseUrl}images/av1.jpg`
+const AVT2 = `${baseUrl}images/av2.jpg`
+const AVT3 = `${baseUrl}images/av3.jpg`
+const AVT4 = `${baseUrl}images/av4.jpg`
 
 const avatars = {
   AVT1,

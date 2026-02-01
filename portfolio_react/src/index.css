@@ -46,7 +46,7 @@ body {
 .bg-fixed {
   position: fixed;
   inset: 0;
-  background: url('/images/b2.jpg') center / cover no-repeat;
+  background: var(--bg-image, url('/images/b2.jpg')) center / cover no-repeat;
   z-index: -1;
   pointer-events: none;
 }

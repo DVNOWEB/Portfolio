@@ -1,9 +1,11 @@
 import './About.css'
-import ME from '/images/d2.jpg'
 import { GiNetworkBars } from 'react-icons/gi'
 import { FaUsers } from 'react-icons/fa'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { useTranslation } from 'react-i18next'
+
+const baseUrl = import.meta.env.BASE_URL
+const ME = `${baseUrl}images/d2.jpg`
 
 const About = () => {
   const { t } = useTranslation()
