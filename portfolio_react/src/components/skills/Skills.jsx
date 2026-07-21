@@ -69,13 +69,13 @@ const Skills = () => {
 
             <article className="skills__details">
               <TbBrandNextjs className="skills__icon" />
-              <h4>NextJS</h4>
+              <h4>Next.js</h4>
               <small className="text-light">{t('skillsSmall2')}</small>
             </article>
 
             <article className="skills__details">
               <FaNodeJs className="skills__icon" />
-              <h4>NodeJS</h4>
+              <h4>Node.js</h4>
               <small className="text-light">{t('skillsSmall2')}</small>
             </article>
 

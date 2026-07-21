@@ -9,10 +9,10 @@ const CTA = () => {
   return (
     <div className="call_to_action">
       <a href={CV} download="DanoZaganjor_CV" className="btn">
-        {i18n.language.startsWith('sv') ? 'Ladda ner mitt CV' : 'Check my resume'}
+        {i18n.language.startsWith('sv') ? 'Ladda ner mitt CV' : 'Download my CV'}
       </a>
       <a href="#contact" className="btn btn-primary">
-        {i18n.language.startsWith('sv') ? 'Låt oss prata' : 'Let`s talk'}
+        {i18n.language.startsWith('sv') ? 'Låt oss prata' : "Let's talk"}
       </a>
     </div>
   );
