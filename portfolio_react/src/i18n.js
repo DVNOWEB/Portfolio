@@ -13,8 +13,7 @@ i18n
         translation: {
           headerSpan: 'Innovativ webbdesign av',
           headerSpan1: 'Frontendutvecklare',
-          headerSpan2:
-            'Designar intuitiva och responsiva digitala upplevelser',
+          headerSpan2: 'Designar intuitiva och responsiva digitala upplevelser',
           headerP:
             'Jag hjälper företag och varumärken att förvandla idéer till moderna, användarvänliga och visuellt starka digitala upplevelser. Genom att kombinera design, teknik och affärsförståelse skapar jag lösningar som både engagerar användare och stärker varumärket.',
           scrollDown: 'Skrolla ner',
@@ -87,14 +86,16 @@ i18n
               avatar: 'AVT1',
               title: 'VD för VAconsulting',
               name: 'Vladan Andric',
-              review: 'DVNOWEB AB är ett lyhört, kunnigt och mycket professionellt företag. De skapade en fantastisk webbplats för mitt företag, VAconsulting, och tog hand om hela processen på ett tryggt och smidigt sätt. För en småföretagare är det ovärderligt att få den typen av stöd. De är dessutom både kreativa och strategiska när det gäller att hitta lösningar som hjälper ett företag att sticka ut.'
+              review:
+                'DVNOWEB AB är ett lyhört, kunnigt och mycket professionellt företag. De skapade en fantastisk webbplats för mitt företag, VAconsulting, och tog hand om hela processen på ett tryggt och smidigt sätt. För en småföretagare är det ovärderligt att få den typen av stöd. De är dessutom både kreativa och strategiska när det gäller att hitta lösningar som hjälper ett företag att sticka ut.',
             },
             {
               id: 't2',
               avatar: 'AVT2',
               title: 'VD för Hår3000',
               name: 'Gabriel Pulgu',
-              review: 'De är responsiva och mycket professionella, och de har byggt vår webbplats två gånger till vår fulla belåtenhet. Nu har de dessutom fått ett nytt uppdrag att bygga vår nya webbshop, och hittills är jag mer än nöjd. Jag kan varmt rekommendera dem.'
+              review:
+                'De är responsiva och mycket professionella, och de har byggt vår webbplats två gånger till vår fulla belåtenhet. Nu har de dessutom fått ett nytt uppdrag att bygga vår nya webbshop, och hittills är jag mer än nöjd. Jag kan varmt rekommendera dem.',
             },
             // More testimonials
           ],
@@ -183,7 +184,7 @@ i18n
             'Proficient in using Express to build robust REST APIs that support smooth integration between client-side and server-side technologies. I place strong emphasis on creating clear, consistent, and maintainable API structures.',
           servicesH3two: 'Work Methodology',
           listP9:
-            'Experienced with multiple project methodologies, including Agile, Scrum, Kanban, and traditional models. My diverse background helps me understand and adapt to each method\'s unique demands. I am proficient in using development tools, version control, and test-driven development to ensure quality in every project.',
+            "Experienced with multiple project methodologies, including Agile, Scrum, Kanban, and traditional models. My diverse background helps me understand and adapt to each method's unique demands. I am proficient in using development tools, version control, and test-driven development to ensure quality in every project.",
           listP10:
             'With a strong foundation in UX design principles, usability, behavioral science, and communication theory, I have a solid understanding of target audiences and their needs. This allows me to create user-centered solutions that feel clear, relevant, and easy to use.',
           listP11:
@@ -200,14 +201,16 @@ i18n
               avatar: 'AVT1',
               title: 'CEO of VAconsulting',
               name: 'Vladan Andric',
-              review: 'DVNOWEB AB is a responsive, knowledgeable, and highly professional company. They created an excellent website for my company, VAconsulting, and managed the entire process in a smooth and reliable way. As a small business owner, that kind of support is invaluable. They are also creative and strategic when it comes to finding solutions that help a business stand out.'
+              review:
+                'DVNOWEB AB is a responsive, knowledgeable, and highly professional company. They created an excellent website for my company, VAconsulting, and managed the entire process in a smooth and reliable way. As a small business owner, that kind of support is invaluable. They are also creative and strategic when it comes to finding solutions that help a business stand out.',
             },
             {
               id: 't2',
               avatar: 'AVT2',
               title: 'CEO of Hår3000',
               name: 'Gabriel Pulgu',
-              review: 'They are responsive and highly professional. They have built our website twice, both times to our full satisfaction. They have now taken on a new project to build our new webshop, and so far I am more than satisfied. I can highly recommend them.'
+              review:
+                'They are responsive and highly professional. They have built our website twice, both times to our full satisfaction. They have now taken on a new project to build our new webshop, and so far I am more than satisfied. I can highly recommend them.',
             },
             // More testimonials
           ],

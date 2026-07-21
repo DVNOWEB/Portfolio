@@ -32,8 +32,7 @@ const projectData = [
     id: 3,
     image: IMG1,
     title: 'My React Portfolio',
-    description:
-      'A minimalist portfolio built with React, JavaScript, and CSS',
+    description: 'A minimalist portfolio built with React, JavaScript, and CSS',
     github: 'https://github.com/DVNOWEB/Portfolio.git',
     demo: 'https://danozaganjor.com/#webdeveloper',
   },
