@@ -1,7 +1,7 @@
 import './Testimonials.css'
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper'
+import { Pagination } from 'swiper/modules'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -55,10 +55,12 @@ const avatars = {
 
 const Testimonials = () => {
   const { t, i18n } = useTranslation()
-  const testimonials = i18n.getResourceBundle(
-    i18n.language,
-    'translation',
-  ).testimonials
+  const testimonials = t('testimonials', {
+    returnObjects: true,
+    defaultValue:
+      i18n.getResourceBundle(i18n.resolvedLanguage || 'en', 'translation')
+        ?.testimonials || [],
+  })
 
   return (
     <section id="testimonials">
