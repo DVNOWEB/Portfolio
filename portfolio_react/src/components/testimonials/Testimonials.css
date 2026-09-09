@@ -1,6 +1,7 @@
 .container.testimonials__container{
   width: 65%;
   padding-bottom: 4rem;
+  overflow: hidden;
 }
 
 .client__avatar{
@@ -12,8 +13,9 @@
 }
 
 .testimonial{
-  background: var(--color-bg-variant)transparent(0.5rem);
-  backdrop-filter: blur(30px);
+  background: var(--color-surface);
+  backdrop-filter: blur(24px);
+  border: 0;
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 1rem;
@@ -23,7 +25,7 @@
 
 .testimonial span{
   font-size: 1rem;
-  color: var(--color-white);
+  color: var(--color-light);
   margin: 1rem 0 0;
 }
 
@@ -44,7 +46,7 @@
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet{
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 /* Media queries M */

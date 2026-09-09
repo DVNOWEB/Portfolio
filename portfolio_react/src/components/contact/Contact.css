@@ -18,11 +18,12 @@
 }
 
 .contact__option{
-  background: var(--color-bg-variant)transparent;
+  background: var(--color-surface);
   padding: 1rem;
   border-radius: 1.5rem;
   text-align: center;
-  backdrop-filter: blur(30px);
+  border: 0;
+  backdrop-filter: blur(24px);
   transition: var(--transition);
 }
 
@@ -35,7 +36,7 @@
 }
 
 .contact__option:hover{
-  background: var(--color-bg-variant);
+  background: var(--color-surface-strong);
 }
 
 .contact__option-icon{
@@ -58,16 +59,24 @@ input, textarea{
   font-size: 1.2rem;
   border-radius: 1.5rem;
   color: var(--color-white);
-  border: 1px solid var(--color-primary);
-  background: var(--color-bg-variant)transparent;
-  backdrop-filter: blur(30px);
+  border: 1px solid var(--color-surface-border);
+  background: var(--color-surface);
+  backdrop-filter: blur(24px);
   transition: var(--transition);
   resize: none;
+}
+
+input:hover,
+textarea:hover,
+input:focus-visible,
+textarea:focus-visible {
+  background: var(--color-surface-strong);
 }
 
 .feedback-message{
   color: var(--color-primary);
   font-size: 1.2rem;
+  min-height: 1.5rem;
 }
 
 

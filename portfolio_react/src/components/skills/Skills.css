@@ -22,17 +22,16 @@ h4{
 }
 
 .skills__container > div {
-  background: var(--color-bg-variant)transparent(0.9);
+  background: var(--color-surface);
   padding: 2.5rem 5rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
-  /* Make blur effect on background with transparency*/
-  backdrop-filter: blur(10px);
+  border: 0;
+  backdrop-filter: blur(18px);
   transition: var(--transition);
 }
 
 .skills__container > div:hover {
-  background: var(--color-bg-variant);
+  background: var(--color-surface-strong);
   cursor: default;
 }
 

@@ -1,6 +1,5 @@
 header {
-  height: 100vh;
-  /* overflow: hidden; */
+  min-height: 100svh;
 }
 
 .header__container {
@@ -9,8 +8,25 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100svh;
   position: relative;
+  padding: 2rem 0 6rem;
+}
+
+.header_box {
+  width: min(100%, 46rem);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  outline: 0;
+}
+
+.header_box p,
+.header_box span,
+.header_box h1 {
+  text-shadow: var(--text-shadow-soft);
 }
 
 /* Call to actions btn */
@@ -29,9 +45,17 @@ header {
 
 .lng_button {
   display: flex;
-  font-size: medium;
   justify-content: center;
+  align-self: center;
+  min-width: auto;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-white);
+  font-size: medium;
   cursor: pointer;
+  box-shadow: none;
 }
 
 /* Socials links */
@@ -44,6 +68,19 @@ header {
   left: 12%;
   bottom: 3rem;
   font-size: large;
+}
+
+.header__socials a {
+  color: var(--color-white);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.header__socials a:hover,
+.lng_button:hover {
+  background: transparent;
+  color: var(--color-primary);
 }
 
 .header__socials::after {
@@ -72,13 +109,14 @@ header {
   transform: rotate(90deg);
   font-size: large;
   font-weight: 300;
+  color: var(--color-light);
 }
 
 /* Media queries M */
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 100vh;
+    min-height: 100svh;
   }
 
   .header__socials {
@@ -92,13 +130,16 @@ header {
 
 @media screen and (max-width: 598px) {
   header {
-    height: 100vh;
+    min-height: 100svh;
   }
 
   .header__socials {
     position: absolute;
     top: 5%;
     left: 5%;
+    bottom: auto;
+    transform: none;
+    flex-direction: column;
   }
 
   .scroll__down {
@@ -108,21 +149,31 @@ header {
 
 @media screen and (max-width: 425px) {
   header {
-    height: 100vh;
+    min-height: 100svh;
   }
 
   .header__container {
     justify-content: flex-start;
+    padding-top: 6rem;
+  }
+
+  .header_box h1 {
+    font-size: 2.55rem;
+    letter-spacing: 0.04em;
   }
 }
 
 @media screen and (max-width: 360px) {
   header {
-    height: 100vh;
+    min-height: 100svh;
   }
 
   .header__container {
     justify-content: flex-start;
-    padding-top: 7rem;
+    padding-top: 5.8rem;
+  }
+
+  .header_box h1 {
+    font-size: 2.2rem;
   }
 }

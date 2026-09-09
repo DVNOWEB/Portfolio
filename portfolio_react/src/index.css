@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,27 +10,39 @@
   text-decoration: none;
 }
 
-/* Color styles root */
 :root {
   --color-bg: #1b1b1b;
-  --color-bg-variant: #0f0f0f;
-  --color-primary: #4db5ff;
-  /* --color-primary: #00d8ff; */
-  --color-primary-variant: rgba(77, 181, 255, 0.5);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.8);
+  --color-primary: #c0d8f8;
+  --color-primary-variant: rgba(192, 216, 248, 0.44);
+  --color-white: #ffffff;
+  --color-light: rgba(245, 248, 253, 0.98);
+  --color-surface: rgba(8, 13, 25, 0.34);
+  --color-surface-strong: rgba(10, 18, 34, 0.56);
+  --color-surface-hover: rgba(15, 15, 15, 0.88);
+  --color-surface-border: rgba(236, 242, 251, 0.24);
+  --color-shadow: rgba(1, 6, 16, 0.42);
+  --color-placeholder: rgba(240, 245, 252, 0.78);
+  --color-fallback: #06090f;
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-primary);
+  --btn-secondary-hover-bg: rgba(217, 222, 232, 0.96);
+  --btn-secondary-hover-text: #07111f;
+  --btn-primary-text: #07111f;
+  --text-shadow-soft: 0 0 18px rgba(202, 220, 248, 0.18), 0 0 34px rgba(110, 148, 209, 0.14), 0 2px 24px rgba(2, 7, 19, 0.48);
+  --text-silver-gradient: linear-gradient(180deg, #ffffff 0%, #fdfefe 18%, #eef5ff 52%, #d7e4f6 100%);
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 
-  --transition: all 0.4s ease;
+  --transition: color 0.35s ease, background-color 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
 }
 
 html {
   scroll-behavior: smooth;
-  transition: var(--transition);
   font-size: 100%;
+  background-color: var(--color-fallback);
 }
 
 ::-webkit-scrollbar {
@@ -36,21 +50,72 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: var(--color-fallback);
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  transition: var(--transition);
+}
+
+body,
+a,
+button,
+input,
+textarea,
+svg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+span {
+  transition: var(--transition);
+}
+
+button {
+  font: inherit;
+}
+
+#root,
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell {
+  isolation: isolate;
+}
+
+main {
+  position: relative;
 }
 
 .bg-fixed {
   position: fixed;
   inset: 0;
-  background: var(--bg-image, url('/images/b2.jpg')) center / cover no-repeat;
-  z-index: -1;
+  background: var(--bg-image) center / cover no-repeat;
+  opacity: 0;
+  transform: translateZ(0);
+  will-change: opacity;
+  z-index: -2;
   pointer-events: none;
 }
 
-/* Container style general */
+.bg-fixed::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 16, 0.44);
+}
+
+.bg-fixed.is-ready {
+  opacity: 1;
+}
 
 .container {
   height: 100%;
@@ -69,10 +134,22 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2.65rem, 7.2vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-shadow: var(--text-shadow-soft);
+  background: var(--text-silver-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
+
 h2 {
   font-size: 3rem;
+  background: var(--text-silver-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .header_span {
@@ -92,18 +169,20 @@ span {
 
 section {
   margin-top: 8rem;
-  /* height: 100vh; */
+  position: relative;
+  scroll-margin-top: 6rem;
 }
 
 section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
+  text-shadow: var(--text-shadow-soft);
 }
 
 section > h2 {
   margin-bottom: 3rem;
-  color: var(--color-primary);
+  color: transparent;
 }
 
 .text-light {
@@ -113,6 +192,8 @@ section > h2 {
 p {
   font-size: medium;
   font-weight: 300;
+  color: inherit;
+  text-shadow: 0 0 14px rgba(184, 205, 235, 0.08);
 }
 
 a {
@@ -124,34 +205,83 @@ a:hover {
   color: var(--color-white);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--btn-secondary-text);
+  background: var(--btn-secondary-bg);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 999px;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-surface-border);
   transition: var(--transition);
   font-size: large;
   font-weight: 500;
+  box-shadow: 0 0.8rem 2rem var(--color-shadow);
 }
 
 .btn:hover {
-  background-color: var(--color-white);
-  color: var(--color-bg);
+  background-color: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
   border-color: transparent;
+  transform: translateY(-2px);
 }
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-bg);
+  color: var(--btn-primary-text);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
 }
 
 img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+input,
+textarea,
+.about__card,
+.skills__container > div,
+.service,
+.portfolio__item,
+.contact__option,
+.testimonial,
+footer,
+nav,
+.header__socials a,
+.lng_button {
+  box-shadow: 0 0.9rem 2.2rem rgba(1, 6, 16, 0.28);
+}
+
+::placeholder {
+  color: var(--color-placeholder);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }
 
 /* Media queries M */
@@ -171,6 +301,10 @@ img {
 @media screen and (max-width: 598px) {
   html {
     font-size: 85%;
+  }
+
+  section {
+    margin-top: 5rem;
   }
 
   nav a {
@@ -206,11 +340,10 @@ img {
     font-size: 80%;
   }
 
-  .container{
+  .container {
     width: var(--container-width-sm);
-    margin: .5rem auto;
+    margin: 0.5rem auto;
   }
-  
 
   h1 {
     font-size: 2.5rem;

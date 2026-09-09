@@ -9,14 +9,23 @@ const Socials = () => {
       <LangSelector />
       <a
         href="https://www.linkedin.com/in/dano-zaganjor"
+        aria-label="Open LinkedIn profile"
         target="_blank"
         rel="noreferrer">
         <BsLinkedin />
       </a>
-      <a href="https://codepen.io/DVNO" target="_blank" rel="noreferrer">
+      <a
+        href="https://codepen.io/DVNO"
+        aria-label="Open CodePen profile"
+        target="_blank"
+        rel="noreferrer">
         <FaCodepen />
       </a>
-      <a href="https://github.com/DVNOWEB" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/DVNOWEB"
+        aria-label="Open GitHub profile"
+        target="_blank"
+        rel="noreferrer">
         <FaGithub />
       </a>
     </div>

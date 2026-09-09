@@ -9,7 +9,7 @@
   width: 80%;
   aspect-ratio: 1/1.8;
   border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  background: linear-gradient(145deg, rgba(20, 91, 169, 0.18), transparent 55%, rgba(20, 91, 169, 0.08));
   display: grid;
   place-items: center;
 }
@@ -33,9 +33,9 @@
 }
 
 .about__card{
-  background-color: var(--color-bg-variant)transparent;
-  backdrop-filter: blur(30px);
-  border: 1px solid transparent;
+  background: var(--color-surface);
+  backdrop-filter: blur(24px);
+  border: 0;
   border-radius: 1rem;
   padding: 1.5rem .5rem;
   text-align: center;
@@ -43,9 +43,12 @@
 }
 
 .about__card:hover{
-  background: transparent;
-  background: var(--color-bg-variant);
+  background: var(--color-surface-strong);
   cursor: default;
+}
+
+.about__card-section {
+  margin-top: 2rem;
 }
 
 .about__icon{

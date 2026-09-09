@@ -5,7 +5,7 @@ import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { useTranslation } from 'react-i18next'
 
 const baseUrl = import.meta.env.BASE_URL
-const ME = `${baseUrl}images/d2.jpg`
+const ME = `${baseUrl}images/d2.jpeg`
 
 const About = () => {
   const { t } = useTranslation()
@@ -45,11 +45,11 @@ const About = () => {
               <FaUsers className="about__icon" />
               <h5>{t('aboutH5one')}</h5>
               <small>{t('aboutSmall3')}</small>
-              <article className="about__card">
+              <div className="about__card-section">
                 <AiOutlineFundProjectionScreen className="about__icon" />
                 <h5>{t('aboutH5two')}</h5>
                 <small>{t('aboutSmall4')}</small>
-              </article>
+              </div>
             </article>
           </div>
 

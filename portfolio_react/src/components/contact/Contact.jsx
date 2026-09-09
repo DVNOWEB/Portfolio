@@ -79,8 +79,11 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             {t('contactBtn')}
           </button>
-          {/* Display feedback message */}
-          {message && <div className="feedback-message">{message}</div>}
+          {message && (
+            <div className="feedback-message" role="status" aria-live="polite">
+              {message}
+            </div>
+          )}
         </form>
       </div>
     </section>

@@ -9,11 +9,11 @@
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  background: var(--color-bg-variant)transparent(0.9);
+  background: var(--color-surface);
   padding: 1.5rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
-  backdrop-filter: blur(10px);
+  border: 0;
+  backdrop-filter: blur(18px);
   transition: var(--transition);
 }
 
@@ -24,11 +24,15 @@
 }
 
 .portfolio__item:hover{
-  background: var(--color-bg-variant);
+  background: var(--color-surface-strong);
   cursor: default;
 }
 
 /* Positioning images in center */
+.portfolio__item-image a{
+  display: block;
+}
+
 .portfolio__item-image img{
   width: 100%;
   height: 300px;
@@ -52,9 +56,16 @@
 .portfolio__item-cta{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
+}
+
+.btn-disabled {
+  opacity: 0.72;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* Media queries M */
