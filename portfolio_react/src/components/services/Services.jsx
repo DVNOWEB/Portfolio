@@ -87,7 +87,7 @@ const Services = () => {
         {/* Fourth box */}
         <article className="service">
           <div className="service__header">
-            <h3>UI & UX design</h3>
+            <h3>{t('servicesH3three')}</h3>
           </div>
 
           <ul className="service__list">

@@ -14,11 +14,11 @@ const projectData = [
   {
     id: 1,
     image: IMG3,
-    title: 'JobAXS',
-    description: 'Recruitment and job platform built as a modern web application',
+    titleKey: 'projects.jobaxs.title',
+    descriptionKey: 'projects.jobaxs.description',
     actions: [
       {
-        label: 'Live Demo',
+        labelKey: 'projectLiveDemo',
         href: 'https://ai-jobbcoach-eight.vercel.app/sv',
         variant: 'primary',
       },
@@ -27,15 +27,15 @@ const projectData = [
   {
     id: 2,
     image: IMG5,
-    title: 'Prisento App',
-    description: 'Mobile app available for both iOS and Android',
+    titleKey: 'projects.prisento.title',
+    descriptionKey: 'projects.prisento.description',
     actions: [
       {
-        label: 'iOS',
+        labelKey: 'projectIos',
         href: 'https://apps.apple.com/se/app/prisento/id6759288718',
       },
       {
-        label: 'Android',
+        labelKey: 'projectAndroid',
         href: 'https://play.google.com/store/apps/details?id=com.prisento.app',
         variant: 'primary',
       },
@@ -44,15 +44,15 @@ const projectData = [
   {
     id: 3,
     image: IMG6,
-    title: 'Next.js Full-Stack Event Booking App',
-    description: 'Next.js, TypeScript, Convex, Stripe, Clerk, Tailwind CSS',
+    titleKey: 'projects.eventBooking.title',
+    descriptionKey: 'projects.eventBooking.description',
     actions: [
       {
-        label: 'GitHub',
+        labelKey: 'projectGithub',
         href: 'https://github.com/DVNOWEB',
       },
       {
-        label: 'Live Demo',
+        labelKey: 'projectLiveDemo',
         href: 'https://youtu.be/CaN9S1Iy5i8',
         variant: 'primary',
       },
@@ -61,16 +61,15 @@ const projectData = [
   {
     id: 4,
     image: IMG4,
-    title: 'Co-working Booking',
-    description:
-      'Full-stack project built with Next.js 14, React, Tailwind CSS, Prisma, MongoDB, and NextAuth',
+    titleKey: 'projects.coworking.title',
+    descriptionKey: 'projects.coworking.description',
     actions: [
       {
-        label: 'GitHub',
+        labelKey: 'projectGithub',
         href: 'https://github.com/DVNOWEB/co_working',
       },
       {
-        label: 'Live Demo',
+        labelKey: 'projectLiveDemo',
         href: 'https://www.youtube.com/watch?v=LJeURc3BPMA&t=68s',
         variant: 'primary',
       },
@@ -79,15 +78,15 @@ const projectData = [
   {
     id: 5,
     image: IMG1,
-    title: 'My React Portfolio',
-    description: 'A minimalist portfolio built with React, JavaScript, and CSS',
+    titleKey: 'projects.portfolio.title',
+    descriptionKey: 'projects.portfolio.description',
     actions: [
       {
-        label: 'GitHub',
+        labelKey: 'projectGithub',
         href: 'https://github.com/DVNOWEB/Portfolio.git',
       },
       {
-        label: 'Live Demo',
+        labelKey: 'projectLiveDemo',
         href: 'https://danozaganjor.com/#webdeveloper',
         variant: 'primary',
       },
@@ -96,16 +95,15 @@ const projectData = [
   {
     id: 6,
     image: IMG2,
-    title: 'Shopping Cart',
-    description:
-      'This project is a basic shopping cart built with React, TypeScript, and the Context API',
+    titleKey: 'projects.shoppingCart.title',
+    descriptionKey: 'projects.shoppingCart.description',
     actions: [
       {
-        label: 'GitHub',
+        labelKey: 'projectGithub',
         href: 'https://github.com/DVNOWEB/webshop_project',
       },
       {
-        label: 'Live Demo',
+        labelKey: 'projectLiveDemo',
         href: 'https://youtu.be/AJE2hXOU41w',
         variant: 'primary',
       },
@@ -120,7 +118,9 @@ const Portfolio = () => {
       <h2>{t('portfolioH2')}</h2>
 
       <div className="container portfolio__container">
-        {projectData.map(({ id, image, title, description, actions }) => {
+        {projectData.map(({ id, image, titleKey, descriptionKey, actions }) => {
+          const title = t(titleKey)
+          const description = t(descriptionKey)
           const previewLink = actions.find(({ href }) => href)?.href
 
           return (
@@ -139,8 +139,9 @@ const Portfolio = () => {
               </div>
 
               <div className="portfolio__item-cta">
-                {actions.map(({ label, href, variant, disabled }) => {
+                {actions.map(({ labelKey, href, variant, disabled }) => {
                   const className = variant === 'primary' ? 'btn btn-primary' : 'btn'
+                  const label = t(labelKey)
 
                   if (disabled) {
                     return (

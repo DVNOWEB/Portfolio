@@ -17,7 +17,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="min profil bild" />
+            <img src={ME} alt={t('aboutImageAlt')} />
           </div>
         </div>
         <div className="about__content">
