@@ -1,7 +1,6 @@
 nav{
   background: var(--color-surface);
   width: max-content;
-  display: block;
   padding: 0.7rem 1.7rem;
   z-index: 10;
   position: fixed;
@@ -43,6 +42,7 @@ nav a.active{
 @media screen and (max-width: 576px){
   nav{
     padding: 0.7rem 1.2rem;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
   }
 
   nav a{

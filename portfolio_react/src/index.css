@@ -92,18 +92,20 @@ button {
   isolation: isolate;
 }
 
-.app-shell > :not(.bg-fixed) {
+header,
+main,
+footer {
   position: relative;
   z-index: 1;
 }
 
-main {
-  position: relative;
-}
-
 .bg-fixed {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
   background: var(--bg-image) center / cover no-repeat;
   opacity: 0;
   transform: translateZ(0);
