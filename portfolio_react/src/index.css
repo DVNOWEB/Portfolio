@@ -88,7 +88,13 @@ button {
 }
 
 .app-shell {
+  position: relative;
   isolation: isolate;
+}
+
+.app-shell > :not(.bg-fixed) {
+  position: relative;
+  z-index: 1;
 }
 
 main {
@@ -102,7 +108,7 @@ main {
   opacity: 0;
   transform: translateZ(0);
   will-change: opacity;
-  z-index: -2;
+  z-index: 0;
   pointer-events: none;
 }
 
