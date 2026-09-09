@@ -8,17 +8,15 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-
-const BACKGROUND_IMAGE = 'n1.jpg'
+import backgroundImage from './assets/background-n1.jpg'
 
 const App = () => {
-  const baseUrl = import.meta.env.BASE_URL
   const background = useMemo(
     () => ({
       id: 'n1',
-      url: `${baseUrl}images/${BACKGROUND_IMAGE}`,
+      url: backgroundImage,
     }),
-    [baseUrl]
+    []
   )
   const [isBackgroundReady, setIsBackgroundReady] = useState(false)
 
