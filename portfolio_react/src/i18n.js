@@ -18,7 +18,7 @@ i18n
             'Jag hjälper företag att gå från idé till en modern webbplats eller app som känns enkel att använda, ser professionell ut och fungerar bra på alla skärmar. Mitt fokus är tydlig design, ren kod och lösningar som gör verklig nytta för både kunden och användaren.',
           scrollDown: 'Skrolla ner',
           ctaDownload: 'Ladda ner CV',
-          ctaTalk: 'Starta ett samtal',
+          ctaTalk: 'Kontakta mig',
           // about
           aboutSpan: 'Om mig',
           aboutH2: 'Vem jag är',

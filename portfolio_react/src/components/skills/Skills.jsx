@@ -70,7 +70,7 @@ const Skills = () => {
             <article className="skills__details">
               <TbBrandNextjs className="skills__icon" />
               <h4>Next.js</h4>
-              <small className="text-light">{t('skillsSmall2')}</small>
+              <small className="text-light">{t('skillsSmall1')}</small>
             </article>
 
             <article className="skills__details">
