@@ -19,7 +19,7 @@ const projectData = [
     actions: [
       {
         labelKey: 'projectLiveDemo',
-        href: 'https://ai-jobbcoach-eight.vercel.app/sv',
+        href: 'https://jobaxs.se/sv',
         variant: 'primary',
       },
     ],
