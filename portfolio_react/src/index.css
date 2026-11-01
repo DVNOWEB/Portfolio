@@ -119,6 +119,8 @@ footer {
   position: absolute;
   inset: 0;
   background: rgba(2, 6, 16, 0.44);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .bg-fixed.is-ready {

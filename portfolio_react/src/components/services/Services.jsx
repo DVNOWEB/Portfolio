@@ -81,6 +81,10 @@ const Services = () => {
               <BsCheck2Circle className="service_list-icon" />
               <p>{t('listP9')}</p>
             </li>
+            <li>
+              <BsCheck2Circle className="service_list-icon" />
+              <p>{t('servicesAiMethodology')}</p>
+            </li>
           </ul>
         </article>
 

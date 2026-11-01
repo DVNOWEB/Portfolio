@@ -7,6 +7,7 @@ import { FaReact } from 'react-icons/fa'
 import { TbBrandReactNative } from 'react-icons/tb'
 import { SiTypescript } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
+import { FaRobot } from 'react-icons/fa'
 import { MdDesignServices } from 'react-icons/md'
 import { FaFigma } from 'react-icons/fa'
 import { TbBrandNextjs } from 'react-icons/tb'
@@ -113,6 +114,12 @@ const Skills = () => {
               <SiMongodb className="skills__icon" />
               <h4>MongoDB</h4>
               <small className="text-light">{t('skillsSmall2')}</small>
+            </article>
+
+            <article className="skills__details">
+              <FaRobot className="skills__icon" />
+              <h4>AI</h4>
+              <small className="text-light">{t('skillsAiAgents')}</small>
             </article>
           </div>
         </div>

@@ -15,7 +15,7 @@ i18n
           headerSpan1: 'Frontendutvecklare',
           headerSpan2: 'Jag bygger tydliga, snabba och responsiva digitala upplevelser',
           headerP:
-            'Jag hjälper företag att gå från idé till en modern webbplats eller app som känns enkel att använda, ser professionell ut och fungerar bra på alla skärmar. Mitt fokus är tydlig design, ren kod och lösningar som gör verklig nytta för både kunden och användaren.',
+            'Jag hjälper företag att förverkliga sina idéer med moderna webbplatser och appar som är användarvänliga, professionellt utformade och fungerar på alla skärmar. Mitt fokus är tydlig design, välstrukturerad kod och lösningar som skapar värde för både kunden och användaren.',
           scrollDown: 'Skrolla ner',
           ctaDownload: 'Ladda ner CV',
           ctaTalk: 'Kontakta mig',
@@ -34,7 +34,7 @@ i18n
           aboutSmall4: '20+ färdiga webb- och appprojekt',
           aboutImageAlt: 'Porträtt av Dano Zaganjor',
           aboutP1:
-            'Jag är frontendutvecklare och grundare av DVNOWEB. Jag gillar att skapa digitala lösningar som är enkla att förstå, lätta att använda och byggda med omsorg från första skiss till färdig lansering.',
+            'Jag är frontendutvecklare och grundare av DVNOWEB. Jag skapar digitala lösningar som är enkla att förstå, lätta att använda och byggda med omsorg från första skiss till lansering.',
           aboutP2:
             'I varje projekt kombinerar jag designkänsla, teknisk förståelse och tydlig kommunikation. Målet är att bygga något som inte bara ser bra ut, utan också hjälper kunden att växa, spara tid och skapa förtroende online.',
           aboutBtn: 'Kontakta mig',
@@ -44,17 +44,18 @@ i18n
           skillsSmall: 'Erfaren',
           skillsSmall1: 'Mellannivå',
           skillsSmall2: 'Grundläggande',
+          skillsAiAgents: 'AI-agenter',
           // Services
           servicesP1:
             'Jag hjälper företag med webbplatser, appar, design och teknisk rådgivning. Oavsett om du behöver bygga något nytt eller förbättra en befintlig lösning tar jag fram en tydlig plan som passar dina mål, din målgrupp och ditt varumärke.',
           servicesP2:
-            'Målet är enkelt: en lösning som är snygg, snabb, lätt att använda och byggd för att skapa resultat.',
+            'Målet är en genomarbetad, snabb och användarvänlig lösning som stödjer verksamhetens mål.',
           servicesH2: 'Tjänster',
           servicesH3: 'Frontendutveckling',
           listP:
             'Semantisk HTML och modern CSS för webbplatser som laddar snabbt, fungerar på alla skärmar och är enkla att vidareutveckla.',
           listP1:
-            'JavaScript och Sass för interaktiva gränssnitt, mjuka användarflöden och design som känns genomarbetad.',
+            'JavaScript och Sass för interaktiva gränssnitt, smidiga användarflöden och genomarbetad design.',
           listP2:
             'React för skalbara webbappar och React Native för mobilappar till både iOS och Android.',
           listP3:
@@ -72,7 +73,9 @@ i18n
             'Express och REST-API:er för tydliga integrationer mellan webbplats, app och externa tjänster.',
           servicesH3two: 'Arbetsmetodik',
           listP9:
-            'Jag arbetar strukturerat med planering, prioritering och tät kommunikation. Agile, Scrum, Kanban, Git och testning hjälper mig att hålla projekt tydliga och kvaliteten hög.',
+            'Jag arbetar strukturerat med planering, prioritering och löpande kommunikation. Agila arbetssätt, Scrum, Kanban, versionshantering med Git och testning bidrar till tydliga processer och hög kvalitet.',
+          servicesAiMethodology:
+            'Jag använder AI-verktyg och AI-agenter som stöd för planering, kodutveckling och granskning. Jag granskar och testar resultatet innan det används i projektet.',
           servicesH3three: 'UI & UX-design',
           listP10:
             'Jag utgår från användarens behov och skapar flöden som är logiska, tillgängliga och enkla att följa.',
@@ -92,14 +95,14 @@ i18n
             },
             prisento: {
               title: 'Prisento App',
-              description: 'En mobilapp för iOS och Android, byggd med fokus på smidig användning och en tydlig appupplevelse.',
+              description: 'En mobilapp för iOS och Android med fokus på intuitiv navigering och en smidig användarupplevelse.',
             },
             eventBooking: {
               title: 'Fullstack-app för eventbokning',
               description: 'En bokningsplattform byggd med Next.js, TypeScript, Convex, Stripe, Clerk och Tailwind CSS.',
             },
             coworking: {
-              title: 'Bokning för co-working',
+              title: 'Bokning för coworking',
               description: 'Ett fullstack-projekt för bokningar, byggt med Next.js, React, Tailwind CSS, Prisma, MongoDB och NextAuth.',
             },
             portfolio: {
@@ -107,7 +110,7 @@ i18n
               description: 'En ren och personlig portfolio byggd med React, JavaScript och CSS.',
             },
             shoppingCart: {
-              title: 'Shopping Cart',
+              title: 'Kundvagn',
               description: 'En enkel och tydlig kundvagn byggd med React, TypeScript och Context API.',
             },
           },
@@ -164,7 +167,7 @@ i18n
           headerSpan1: 'Frontend Developer',
           headerSpan2: 'I build clear, fast, and responsive digital experiences',
           headerP:
-            'I help businesses turn ideas into modern websites and apps that are easy to use, professional to look at, and reliable on every screen. My focus is clear design, clean code, and solutions that create real value for both the client and the user.',
+            'I help businesses bring their ideas to life with modern websites and apps that are easy to use, professionally designed, and work across all screen sizes. My focus is clear design, well-structured code, and solutions that create value for both clients and users.',
           scrollDown: 'Scroll down',
           ctaDownload: 'Download CV',
           ctaTalk: "Let's talk",
@@ -172,7 +175,7 @@ i18n
           aboutSpan: 'About me',
           aboutH2: 'Who I am',
           aboutH5: 'Background',
-          aboutSmall: 'KYH University of Applied Sciences',
+          aboutSmall: 'KYH Higher Vocational Education',
           aboutH6: 'Frontend developer',
           aboutSmall1: 'DVNOWEB WEB AGENCY',
           aboutH6one: 'CEO / Founder',
@@ -183,7 +186,7 @@ i18n
           aboutSmall4: '20+ completed web and app projects',
           aboutImageAlt: 'Portrait of Dano Zaganjor',
           aboutP1:
-            'I am a frontend developer and the founder of DVNOWEB. I enjoy creating digital products that are simple to understand, easy to use, and built with care from the first idea to the final launch.',
+            'I am a frontend developer and the founder of DVNOWEB. I create digital products that are simple to understand, easy to use, and built with care from the first idea to launch.',
           aboutP2:
             'In every project, I combine design thinking, technical skill, and clear communication. The goal is to build something that not only looks good, but also helps the client grow, save time, and build trust online.',
           aboutBtn: 'Contact me',
@@ -193,11 +196,12 @@ i18n
           skillsSmall: 'Experienced',
           skillsSmall1: 'Intermediate',
           skillsSmall2: 'Basic',
+          skillsAiAgents: 'AI agents',
           // Services
           servicesP1:
             'I help businesses with websites, apps, design, and technical guidance. Whether you need something new or want to improve an existing product, I create a clear plan around your goals, your audience, and your brand.',
           servicesP2:
-            'The goal is simple: a solution that looks sharp, loads fast, feels easy to use, and is built to deliver results.',
+            'The goal is a thoughtfully designed, fast, and user-friendly solution that supports your business goals.',
           servicesH2: 'Services',
           servicesH3: 'Frontend Development',
           listP:
@@ -219,10 +223,12 @@ i18n
             'MongoDB and NoSQL for flexible storage of content, user data, and application information.',
           listP8:
             'Express and REST APIs for clear integrations between websites, apps, and external services.',
-          servicesH3two: 'Work Methodology',
+          servicesH3two: 'Working Methodology',
           listP9:
-            'I work with clear planning, priorities, and close communication. Agile, Scrum, Kanban, Git, and testing help me keep projects focused and quality high.',
-          servicesH3three: 'UI & UX design',
+            'I work with structured planning, clear priorities, and regular communication. Agile practices, Scrum, Kanban, version control with Git, and testing support clear processes and high-quality delivery.',
+          servicesAiMethodology:
+            'I use AI tools and AI agents to support planning, coding, and code review. I review and test the results before using them in the project.',
+          servicesH3three: 'UI & UX Design',
           listP10:
             'I start from the user’s needs and create flows that are logical, accessible, and easy to follow.',
           listP11:
@@ -241,14 +247,14 @@ i18n
             },
             prisento: {
               title: 'Prisento App',
-              description: 'A mobile app for iOS and Android, built around smooth use and a clear app experience.',
+              description: 'A mobile app for iOS and Android with intuitive navigation and a smooth user experience.',
             },
             eventBooking: {
               title: 'Full-stack event booking app',
               description: 'A booking platform built with Next.js, TypeScript, Convex, Stripe, Clerk, and Tailwind CSS.',
             },
             coworking: {
-              title: 'Co-working booking',
+              title: 'Coworking booking platform',
               description: 'A full-stack booking project built with Next.js, React, Tailwind CSS, Prisma, MongoDB, and NextAuth.',
             },
             portfolio: {

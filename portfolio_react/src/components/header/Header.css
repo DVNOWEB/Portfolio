@@ -142,13 +142,14 @@ header {
 /* Media queries S */
 
 @media screen and (max-width: 598px) {
-  header {
+  header#webdeveloper {
     min-height: 100svh;
+    z-index: 2;
   }
 
   .header__container {
     justify-content: flex-start;
-    padding-top: 4.8rem;
+    padding-top: 3.2rem;
   }
 
   .header_box {
@@ -172,8 +173,8 @@ header {
   }
 
   .header__socials {
-    position: absolute;
-    top: 5%;
+    position: fixed;
+    top: var(--socials-top, 5svh);
     left: 5%;
     bottom: auto;
     transform: none;
@@ -192,7 +193,7 @@ header {
 
   .header__container {
     justify-content: flex-start;
-    padding-top: 4.2rem;
+    padding-top: 2.6rem;
   }
 
   .header_box h1 {
@@ -207,7 +208,7 @@ header {
 
   .header__container {
     justify-content: flex-start;
-    padding-top: 3.8rem;
+    padding-top: 2.2rem;
   }
 
   .header_box h1 {
